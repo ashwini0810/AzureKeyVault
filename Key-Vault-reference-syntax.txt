@@ -1,0 +1,25 @@
+﻿***********************************
+See https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references for details.
+***********************************
+
+
+-- syntax #1
+---- specific version
+@Microsoft.KeyVault(SecretUri=https://featuremeshkeyvault.vault.azure.net/secrets/FeatureMeshOffline/282f0ac960ce419cb9462e09ba592b44)
+
+
+---- latest version
+@Microsoft.KeyVault(SecretUri=https://featuremeshkeyvault.vault.azure.net/secrets/FeatureMeshOffline/282f0ac960ce419cb9462e09ba592b44)
+
+
+
+-- syntax #2
+---- specific version
+@Microsoft.KeyVault(VaultName=featuremeshkeyvault;SecretName=featuremeshoffline;SecretVersion=282f0ac960ce419cb9462e09ba592b44)
+
+---- latest version
+@Microsoft.KeyVault(VaultName=featuremeshkeyvault;SecretName=featuremeshoffline)
+
+
+
+@Microsoft.KeyVault(SecretUri=https://featuremeshkeyvault.vault.azure.net/secrets/SecretNumber/80e70e120810466f9417ddcba352af33)
